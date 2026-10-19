@@ -17,3 +17,15 @@
 - 同一提醒每天只推一次
 
 本地测试：`pip install -r requirements.txt && python monitor.py check`（未配置 token 时打印到终端）
+
+## AI 分析（Claude）
+设置 `ANTHROPIC_API_KEY` 后自动启用：
+- **新闻筛选**：AI 判断每条新闻对你持仓的影响（🔴重大/🟡关注），只推这两类，并附利好/利空和理由
+- **仓位风险**：收盘汇总里附 AI 风险评级（低/中/高）、风险点和建议（集中度、亏损、行业相关性、事件风险）
+
+## 部署到自己的服务器（推荐，代替 GitHub Actions）
+```bash
+curl -fsSL https://raw.githubusercontent.com/wdnmd2716/-/claude/bold-davinci-cf29y0/deploy.sh | bash
+nano /opt/stock-monitor/.env   # 填 ANTHROPIC_API_KEY、PUSHPLUS_TOKEN
+```
+cron 每 10 分钟跑 `monitor.py auto`，按纽约时间自动区分盘中检查/收盘汇总。用服务器时请禁用 GitHub Actions，避免重复推送。改持仓：编辑 `/opt/stock-monitor/config.yaml`。
