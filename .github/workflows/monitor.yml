@@ -1,0 +1,41 @@
+name: Stock Monitor
+
+on:
+  schedule:
+    # 美股交易时段（UTC 13:30-21:00，覆盖夏令时/冬令时），周一至周五每 30 分钟
+    - cron: "*/30 13-20 * * 1-5"
+    # 收盘汇总：UTC 21:15（北京时间次日 5:15）
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: monitor
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Run monitor
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+        run: |
+          if [ "${{ github.event.schedule }}" = "15 21 * * 1-5" ]; then
+            python monitor.py summary
+          else
+            python monitor.py check
+          fi
+      - name: Save state
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add state.json
+          git diff --cached --quiet || (git commit -m "update state [skip ci]" && git push)

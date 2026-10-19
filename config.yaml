@@ -1,0 +1,16 @@
+# 持仓：代码、股数、成本价
+holdings:
+  - {symbol: AAPL, shares: 10, cost: 180}
+  - {symbol: NVDA, shares: 5, cost: 120}
+
+# 只关注、未持有的股票
+watchlist: [TSLA, MSFT]
+
+alerts:
+  move_pct: 3        # 单日涨跌幅超过该值(%)提醒
+  stop_loss_pct: -10 # 持仓相对成本亏损超过该值(%)提醒
+  take_profit_pct: 30 # 持仓相对成本盈利超过该值(%)提醒
+
+news:
+  enabled: true
+  max_per_symbol: 3  # 每只股票每次最多推送几条新新闻
