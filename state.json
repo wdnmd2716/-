@@ -81,7 +81,14 @@
    "c81d1046-8423-3136-a949-2314d088dd98",
    "b25bace5-ed58-3ee6-a86b-d59d7f657ff1",
    "61770ac2-7f0b-3afe-bdce-7c7b65d537d1",
-   "694aa5e8-a0e5-3ed4-8f8c-8eae26cb05b2"
+   "694aa5e8-a0e5-3ed4-8f8c-8eae26cb05b2",
+   "d4af828e-599d-3ebd-bc01-20793e3159cf",
+   "4b350178-51fd-3eec-aee1-7a6ff85bb8cf",
+   "714bf544-dc5f-3bad-b2b6-f4149cfadd40",
+   "3d120ecf-38a6-434e-a505-70339e316b0d",
+   "562b725f-9924-3215-9005-91206a7b28c3",
+   "9f7230a8-a61c-3b15-b2d5-2df2523a3837",
+   "b191fb08-44aa-3b9a-8661-c6bbc45c3098"
   ],
   "NVDA": [
    "5c33bc55-eaf8-4be0-8322-1dd676072024",
@@ -195,7 +202,11 @@
    "ba89baed-490c-4a10-8411-10b6a7592def",
    "f3125155-44f4-4d7a-b068-bdcc4dedd3b1",
    "0164e42f-812d-4b5b-b172-b51841bb75b6",
-   "fe4a8897-2b85-42d0-a948-931ad304bd2f"
+   "fe4a8897-2b85-42d0-a948-931ad304bd2f",
+   "646d1745-3e4b-46fb-98eb-914c47ca850c",
+   "656fca57-9896-3dfb-96e8-e0af2bc227df",
+   "d620ee68-cfb1-302a-8ada-9fb3c7083944",
+   "7d5a8028-4835-39b3-9dd9-abebce7b388e"
   ],
   "TSLA": [
    "6a21784f-7ec5-455f-a0f8-97e54eed9eba",
@@ -283,7 +294,11 @@
    "600b02d0-4929-39b9-b924-4edb3e072365",
    "7a53bfaa-bc43-3dba-9eb3-701d282000fa",
    "ee26fba5-fc10-334f-bd56-1f92a1545446",
-   "9d505476-c029-3e00-a09f-8dfcd8785824"
+   "9d505476-c029-3e00-a09f-8dfcd8785824",
+   "4b350178-51fd-3eec-aee1-7a6ff85bb8cf",
+   "447888b8-f608-3a4c-94bc-055e720f38d3",
+   "3db8ded2-0069-306d-aa7d-0ab1e5f881ab",
+   "855ca9ad-4f44-3a91-be6d-67bf6dfc7108"
   ],
   "MSFT": [
    "a5b51ba4-9bd9-4e62-954f-831c3f61e110",
@@ -384,7 +399,16 @@
    "2ba67491-bbd6-3da2-a4e2-ca63ad20931f",
    "13665656-1e35-36b6-88ae-aca3945861c1",
    "34c83c3b-821f-4a73-ac42-e3738e6ca5d8",
-   "70ef78e8-3626-35fe-ba03-5accb24c1a6f"
+   "70ef78e8-3626-35fe-ba03-5accb24c1a6f",
+   "656fca57-9896-3dfb-96e8-e0af2bc227df",
+   "ff77f6dc-9f81-3dac-abf8-268b41011a79",
+   "9eafc902-2ca7-3012-9f73-7c64ffd785b6",
+   "ab8a9fe3-4b2c-3e45-84ac-db8a75057535",
+   "646d1745-3e4b-46fb-98eb-914c47ca850c",
+   "8249693d-fad3-352b-9fa6-f1fc84cd47a9",
+   "3d120ecf-38a6-434e-a505-70339e316b0d",
+   "c155f054-d69f-3b80-bf77-52e3424d0f3e",
+   "28396f88-12d6-3f4f-a7d2-23b92efb42b2"
   ]
  },
  "alerted": {
